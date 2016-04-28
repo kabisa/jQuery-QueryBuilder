@@ -1125,7 +1125,7 @@
             val;
 
         if (operator.accept_values == 1) {
-            val = [rule.value];
+            val = [rule.value.replace(/\+/g, ' ')];
         }
         else {
             val = rule.value;
